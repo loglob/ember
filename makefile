@@ -5,7 +5,7 @@ ember: main.c
 	gcc -std=c99 -Wall -Wextra main.c -o ember
 
 install: ember
-	ep ember $(INSTALL_DIR)
+	cp ember $(INSTALL_DIR)
 
 install-local: ember
 	cp ember $(LOCAL_INSTALL_DIR)
