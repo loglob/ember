@@ -1,8 +1,8 @@
-INSTALL_DIR=/usr/local/bin/
-LOCAL_INSTALL_DIR=~/bin/
+INSTALL_DIR=/usr/local/bin
+LOCAL_INSTALL_DIR=~/bin
 
 ember: main.c
-	gcc -std=c99 -Wall -Wextra main.c -o ember
+	c99 -Wall -Wextra main.c -o ember
 
 install: ember
 	cp ember $(INSTALL_DIR)
@@ -12,3 +12,6 @@ install-local: ember
 
 clean:
 	rm ember
+
+uninstall:
+	rm $(INSTALL_DIR)/ember
