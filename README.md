@@ -16,3 +16,8 @@ will try to install into /usr/local/bin/ and
 will try to install into ~/bin/.
 To install into a custom directory, run
 ```make INSTALL_DIR="{custom directory}" install```
+
+To uninstall, run
+```make uninstall```.
+If you installed with a custom directory you need to use
+```make INSTALL_DIR="{custom directory}" uninstall```.
